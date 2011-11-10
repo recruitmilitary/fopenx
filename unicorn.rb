@@ -3,7 +3,7 @@
 ENV['HOME'] ||= '/home/deploy'
 
 rails_env = ENV['RAILS_ENV'] || 'production'
-deploy_to = '/home/deploy/public_html/fopen'
+deploy_to = '/home/deploy/public_html/fopenx'
 working_directory = deploy_to
 shared_path = deploy_to
 shared_bundler_gems_path = "#{shared_path}/bundle"
