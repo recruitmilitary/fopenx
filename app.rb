@@ -16,15 +16,17 @@ IMAGE_EXT = {
   '76' => 'jpeg',
 }
 
+ROOT_PATH = '/www/delivery'
+
 # redirects links
-get '/ck.php' do
+get ROOT_PATH + '/ck.php' do
   zoneid = params[:zoneid]
   destination = REDIRECTS[zoneid] || 'http://recruitmilitary.com'
   redirect destination
 end
 
 # serves images
-get '/avw.php' do
+get ROOT_PATH + '/avw.php' do
   zoneid = params[:zoneid]
   if extension = IMAGE_EXT[zoneid]
     filename = "#{zoneid}.#{extension}"
