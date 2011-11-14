@@ -8,7 +8,7 @@ working_directory = deploy_to
 shared_path = deploy_to
 shared_bundler_gems_path = "#{shared_path}/bundle"
 
-worker_processes 4
+worker_processes 2
 
 # Load rails into the master before forking workers
 # for super-fast worker spawn times
